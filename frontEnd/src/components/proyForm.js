@@ -30,6 +30,8 @@ class PForm extends React.Component {
         return "error";
     }
   }
+  /*Todo el código está bien estructurado y muy claro. Lo único que se me ocurre por acá es hacer un método que haga setState de 
+  errorAlert y goodAlert a false de una y que lo llamen las 3 veces que hacen eso.*/
 
   handleChangeUrl(e) {
     this.setState({ url: e.target.value,
