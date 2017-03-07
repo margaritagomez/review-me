@@ -30,7 +30,21 @@ class PForm extends React.Component {
         return "error";
     }
   }
-
+/* En general la página está excelente. El código está muy organizado y claro. Todo está bien dividido en componentes y tienen un diseño muy lindo. 
+En cuanto a usabilidad está perfecto. Tal vez como consejo para que sea más chevere y pues, útil, incorporar login. Si van a hacer las cosas más pro, 
+también sería chevere como filtrar los comentarios que le ponen a uno como por reputación de quien los escribe o algo, para poner los más "útiles" primero.
+También lo de calificar los repositorios está chevere pero mejor si uno solo pudiera calificar una vez :). Pocas cosas se me ocurren para mejorar el código
+pero depronto se podría evitar código replicado si hacen un método que establezca errorAlert:false y goodAlert: false*/
+  
+  metodoReview(){
+    this.setState({
+       errorAlert: false,
+       goodAlert: fal
+    });
+  }
+  
+  /*Luego llaman el método cada vez que lo necesiten*/
+  
   handleChangeUrl(e) {
     this.setState({ url: e.target.value,
       errorAlert:false,
