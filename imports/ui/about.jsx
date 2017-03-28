@@ -10,19 +10,22 @@ class About extends React.Component {
         </h1>
         <h3>The place to get the best feedback on your projects</h3>
         <br></br>
-        <p>
-          Review me is a wonderful tool that pretends to organize and give people the ability to review and rate open source projects.
-          Right now, review me only supports projects hosted in Github, but we hope to change that in the future. The idea of this tool
-          is to provide a plataform where you can post your github repo, a description to get people excited, and if you wish,
-          the profile of your project's ideal contributor. This way, people can quickly learn about your project and start collaborating
-          and they can also review your idea with comments and ratings. Try to correct what people suggest in their comments, so that
-          your rating will be reset and you can rise to the top of the ratings. We hope this tool helps you improve your projects and
-          find amazing people to collaborate with you. You can Search for projects using the search bar up there, and it will match
-          project name, description, and owner.If you have any feedback for us, our project is included below.
-<br></br>
-          Comment,
-          rate us, and collaborate with us!
-      </p>
+        
+          {/*Para los títulos podrían utilizar otra Google Font como Lato, Montserrat o Nunito */}
+          {/*Este párrafo nadie lo va a leeer porque está muy largo. Pónganlo en bullets o una imagen o palabras resaltadas,
+          o algo que llame la atención*/}
+          <h4>Review-me is a great tool for developers who wish to receive feedback on their open source projects.</h4>
+        <p>You may <strong>rate</strong>, <strong>review</strong> and <strong>discover</strong> cool projects by using
+          different filters. Help other users and collaborate with them!</p>
+          <ol>
+            <li>Sign up with your Github account</li>
+            <li>Add your repo and include:</li>
+              <ul>
+                <li>A description to get people excited</li>
+                <li>The profile of your project's ideal contributor</li>
+              </ul>
+            <li>Receive constructive feedback and improve your work!</li>
+        </ol>
       <br></br>
 
 
