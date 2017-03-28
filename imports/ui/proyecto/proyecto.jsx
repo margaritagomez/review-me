@@ -95,23 +95,28 @@ class Proyecto extends React.Component {
             <div className = "row text-center">
               <a href={this.props.proyecto.url} target="_blank"><h5><i className="fa fa-github fa-2x" aria-hidden="true"></i> Repo</h5></a>
             </div>
+            {/*La letra de forks, stars y views está un poco pequeña, se podría ver mejor si estuviera el ícono, abajo el titulo, y luego la info asi:*/}
             <div className="row">
               <div className ="col-md-4">
-                <h6><i className="fa fa-code-fork fa-lg" aria-hidden="true"></i>  Forks: {this.props.proyecto.repo.forks}</h6>
+                <h5>
+                  <i className="fa fa-code-fork fa-lg" aria-hidden="true"></i> <br/> Forks <br/> {this.props.proyecto.repo.forks}
+                </h5>
               </div>
               <div className ="col-md-4">
-                <h6><i className="fa fa-star fa-lg" aria-hidden="true"></i> Stars: {this.props.proyecto.repo.stars}</h6>
+                <h5>
+                  <i className="fa fa-star fa-lg" aria-hidden="true"></i> <br/> Stars <br/> {this.props.proyecto.repo.stars}
+                </h5>
               </div>
               <div className ="col-md-4">
-                <h6>
-                  <i className="fa fa-eye fa-lg" aria-hidden="true"></i> Watches: {this.props.proyecto.repo.watchers}
-                </h6>
+                <h5>
+                  <i className="fa fa-eye fa-lg" aria-hidden="true"></i> <br/> Watches <br/> {this.props.proyecto.repo.watchers}
+                </h5>
               </div>
             </div>
-            <div className="row text-center">
+            <div className="row center">
               <ReactStars count={5} size={24} color2={'#93c54b'} edit={false} value={this.state.avgRating}/>
             </div>
-            <div className="row text-center">
+            <div className="row center">
               <br></br>
               <PModal eraseComment={this.eraseComment.bind(this)} alert={this.state.alert} alertText={this.state.alertText} proyecto={this.props.proyecto} addRating={this.addRating.bind(this)} avgRating={this.state.avgRating} comments={this.state.comments} saveComment={this.saveComment.bind(this)}/>
             </div>
